@@ -26,7 +26,7 @@ cors_proxy.createServer({
   requireHeader: [],
   checkRateLimit: checkRateLimit,
   setHeaders: {
-'access-control-allow-headers': 'Accept,DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
+'access-control-allow-headers': 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
 'access-control-expose-headers': 'Content-Length,Content-Range',},
   removeHeaders: [
     'cookie',
