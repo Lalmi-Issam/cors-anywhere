@@ -25,13 +25,8 @@ cors_proxy.createServer({
   originWhitelist: originWhitelist,
   requireHeader: [],
   checkRateLimit: checkRateLimit,
-  setHeaders: {"Content-Type": "text/plain; application/json",
-               'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-               'Accept-Language': 'en-US,en;q=0.5',
-               'DNT': 1,
-               'Connection': 'keep-alive',
-               'Upgrade-Insecure-Requests': 1,
-               'Accept-Encoding': 'gzip, deflate, br',},
+  setHeaders: {'Connection': 'keep-alive',
+               'Origin': 'https://khkhkhkh.com',},
   
   removeHeaders: [
     'cookie',
