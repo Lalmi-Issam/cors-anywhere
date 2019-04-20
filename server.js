@@ -25,9 +25,14 @@ cors_proxy.createServer({
   originWhitelist: originWhitelist,
   requireHeader: [],
   checkRateLimit: checkRateLimit,
-  setHeaders: {
-'access-control-allow-headers': 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
-'access-control-expose-headers': 'Content-Length,Content-Range',},
+  setHeaders: {'Access-Control-Allow-Headers': 'Origin,Accept,DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
+               'Access-Control-Expose-Headers': 'Content-Length,Content-Range',
+               'access-control-allow-headers': 'origin,accept,dnt,user-agent,x-requested-with,if-modified-since,cache-control,content-type,range',
+               'access-control-expose-headers': 'content-length,content-range',
+               'Access-Control-Allow-Origin': '*',
+               'access-control-allow-origin': '*',
+               'Content-Type': 'text/plain; application/json',
+               'content-type': 'text/plain; application/json',},
   removeHeaders: [
     'cookie',
     'cookie2',
