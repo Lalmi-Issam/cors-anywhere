@@ -31,7 +31,7 @@ cors_proxy.createServer({
     'access-control-allow-headers': 'X-Requested-With',
     'access-control-allow-headers': 'If-Modified-Since',
     'access-control-allow-headers': 'Cache-Control',
-    'access-control-allow-headers': 'Content-Type,
+    'access-control-allow-headers': 'Content-Type',
     'access-control-allow-headers': 'Range',
     'access-control-expose-headers': 'Content-Length',
     'access-control-expose-headers': 'Content-Range',},
