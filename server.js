@@ -28,7 +28,7 @@ cors_proxy.createServer({
   setHeaders: {'Access-Control-Allow-Headers': 'Origin,Accept,DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
                'Access-Control-Expose-Headers': 'Content-Length,Content-Range',
                'access-control-allow-headers': 'origin,accept,dnt,user-agent,x-requested-with,if-modified-since,cache-control,content-type,range',
-               'access-control-expose-headers': 'content-length,content-range'
+               'access-control-expose-headers': 'content-length,content-range',
                "Content-Type": "text/plain; application/json",
                "content-type": "text/plain; application/json",},
   removeHeaders: [
