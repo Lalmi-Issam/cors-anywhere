@@ -27,7 +27,7 @@ cors_proxy.createServer({
   checkRateLimit: checkRateLimit,
   setHeaders: {
 'access-control-allow-headers': 'dnt',
-'Access-Control-Allow-Origin' '*',
+'Access-Control-Allow-Origin': '*',
 'access-control-allow-headers': 'user-agent',
 'access-control-allow-headers': 'x-requested-with',
 'access-control-allow-headers': 'if-Modified-since',
