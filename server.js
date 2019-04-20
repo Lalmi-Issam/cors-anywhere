@@ -30,7 +30,7 @@ cors_proxy.createServer({
                'access-control-allow-headers': 'origin,accept,dnt,user-agent,x-requested-with,if-modified-since,cache-control,content-type,range',
                'access-control-expose-headers': 'content-length,content-range'
                "Content-Type": "text/plain; application/json"
-               "Content-Type": "text/plain; application/json",},
+               "content-type": "text/plain; application/json",},
   removeHeaders: [
     'cookie',
     'cookie2',
