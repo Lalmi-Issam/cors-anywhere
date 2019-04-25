@@ -25,8 +25,9 @@ cors_proxy.createServer({
   originWhitelist: originWhitelist,
   requireHeader: [],
   checkRateLimit: checkRateLimit,
-  setHeaders: {'Connection': 'keep-alive',
-               'Origin': 'https://khkhkhkh.com',},
+  setHeaders: {'Access-Control-Allow-Methods':'GET,POST,OPTIONS',
+               'Access-Control-Allow-Headers':'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
+               'Access-Control-Expose-Headers':'Content-Length,Content-Range',},
   
   removeHeaders: [
     'cookie',
