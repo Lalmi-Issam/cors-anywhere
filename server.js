@@ -6,7 +6,7 @@ var port = process.env.PORT || 8080;
 // Grab the blacklist from the command-line so that we can update the blacklist without deploying
 // again. CORS Anywhere is open by design, and this blacklist is not used, except for countering
 // immediate abuse (e.g. denial of service). If you want to block all origins except for some,
-// use originWhitelist instead.
+// use originWhitelist instead.'Content-Type': 'application/x-www-form-urlencoded'
 var originBlacklist = parseEnvList(process.env.CORSANYWHERE_BLACKLIST);
 var originWhitelist = parseEnvList(process.env.CORSANYWHERE_WHITELIST);
 function parseEnvList(env) {
@@ -26,7 +26,8 @@ cors_proxy.createServer({
   requireHeader: [],
   checkRateLimit: checkRateLimit,
   setHeaders: {'Access-Control-Allow-Methods':'GET,POST,OPTIONS',
-               'Access-Control-Allow-Headers':'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range',
+               'Content-Type': 'application/x-www-form-urlencoded',
+               'Access-Control-Allow-Headers':'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Range',
                'Access-Control-Expose-Headers':'Content-Length,Content-Range',},
   
   removeHeaders: [
